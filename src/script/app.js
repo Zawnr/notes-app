@@ -6,6 +6,10 @@ const runApp = () => {
   initSearch();
   initNoteForm();
   renderAll();
+
+  window.addEventListener('note-changed', () => {
+    renderAll();
+  });
 };
 
 export default runApp; 

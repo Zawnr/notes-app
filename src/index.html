@@ -1,20 +1,30 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="id">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Aplikasi Catatan</title>
-    <!-- <link rel="stylesheet" href="styles.css" /> -->
   </head>
   <body>
-    <h1>Aplikasi Catatan</h1>
+    <div class="container">
+      <header>
+        <h1>Aplikasi Catatan</h1>
+        <input type="text" id="search-notes" placeholder="Cari catatan..." />
+      </header>
 
-    <input type="text" id="search-notes" placeholder="Cari catatan..." />
-    <note-form></note-form>
-    <h2>Catatan Aktif</h2>
-    <note-list id="notes-list"></note-list>
+      <section class="form-section">
+        <note-form></note-form>
+      </section>
 
-    <h2>Catatan Arsip</h2>
-    <note-list id="archived-list"></note-list>
+      <section class="notes-section">
+        <h2>Catatan Aktif</h2>
+        <note-list id="notes-list"></note-list>
+      </section>
+
+      <section class="notes-section">
+        <h2>Catatan Arsip</h2>
+        <note-list id="archived-list"></note-list>
+      </section>
+    </div>
   </body>
 </html>
